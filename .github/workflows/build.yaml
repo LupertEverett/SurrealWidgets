@@ -29,7 +29,9 @@ jobs:
             libsdl2-mixer-dev \
             libfontconfig-dev \
             libglib2.0-dev \
-            libegl-dev
+            libgl-dev \
+            libegl-dev \
+            libgl1-mesa-glx
       - name: Create Build Environment
         run: cmake -E make_directory ${{runner.workspace}}/build
 
