@@ -30,8 +30,7 @@ jobs:
             libfontconfig-dev \
             libglib2.0-dev \
             libgl-dev \
-            libegl-dev \
-            libgl1-mesa-glx
+            libegl-dev
       - name: Create Build Environment
         run: cmake -E make_directory ${{runner.workspace}}/build
 
