@@ -1260,6 +1260,11 @@ void X11DisplayWindow::SwapGLBuffers()
 	eglSwapBuffers(m_EGLDisplay, m_EGLSurface);
 }
 
+DisplayWindow::GLFuncPtr X11DisplayWindow::GetGLProcAddress(const char* name)
+{
+	return (GLFuncPtr)eglGetProcAddress(name);
+}
+
 // This is to avoid needing all the Vulkan headers and the volk binding library just for this:
 #ifndef VK_VERSION_1_0
 

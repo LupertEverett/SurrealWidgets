@@ -141,6 +141,7 @@ public:
 	void MakeGLContextCurrent() override;
 	bool SetGLSwapInterval(int interval) override;
 	void SwapGLBuffers() override;
+	GLFuncPtr GetGLProcAddress(const char* name) override;
 
 private:
 	// Event handlers as otherwise linking DisplayWindowHost On...() functions with Wayland events directly crashes the app

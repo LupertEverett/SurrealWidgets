@@ -659,6 +659,11 @@ void SDL2DisplayWindow::SwapGLBuffers()
 	SDL_GL_SwapWindow(Handle.window);
 }
 
+DisplayWindow::GLFuncPtr SDL2DisplayWindow::GetGLProcAddress(const char* name)
+{
+	return (GLFuncPtr)SDL_GL_GetProcAddress(name);
+}
+
 InputKey SDL2DisplayWindow::ScancodeToInputKey(SDL_Scancode keycode)
 {
 	switch (keycode)
