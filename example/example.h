@@ -40,7 +40,7 @@ private:
 	TextLabel* SelectLabel = nullptr;
 	TextLabel* GeneralLabel = nullptr;
 	TextLabel* ExtrasLabel = nullptr;
-	RadioGroup RadioGroup;
+	RadioGroup Group;
 	RadioButtonLabel* FullscreenRadio = nullptr;
 	RadioButtonLabel* DisableAutoloadRadio = nullptr;
 	CheckboxLabel* DontAskAgainCheckbox = nullptr;

@@ -120,8 +120,8 @@ LauncherWindowTab2::LauncherWindowTab2(Widget parent)
 	SelectLabel = new TextLabel(this);
 	GeneralLabel = new TextLabel(this);
 	ExtrasLabel = new TextLabel(this);
-	FullscreenRadio = new RadioButtonLabel(&RadioGroup, this);
-	DisableAutoloadRadio = new RadioButtonLabel(&RadioGroup, this);
+	FullscreenRadio = new RadioButtonLabel(&Group, this);
+	DisableAutoloadRadio = new RadioButtonLabel(&Group, this);
 	DontAskAgainCheckbox = new CheckboxLabel(this);
 	LightsCheckbox = new CheckboxLabel(this);
 	BrightmapsCheckbox = new CheckboxLabel(this);
