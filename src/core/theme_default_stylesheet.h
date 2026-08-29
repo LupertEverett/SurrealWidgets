@@ -483,8 +483,8 @@ listview-body, treeview-body {
 }
 
 listview-header, treeview-header {
-	background-color: var(--secondary-500);
-	color: var(--secondary-text-500);
+	background-color: var(--primary-600);
+	color: var(--primary-text-600);
 	noncontent-left: 10;
 	noncontent-right: 2;
 }
